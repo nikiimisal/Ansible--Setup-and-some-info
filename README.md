@@ -126,8 +126,69 @@ With Ansible:
 ---
 
 
+<h1>📘 Ansible Setup Guide</h1>
 
+🚀 Step 1: Launch EC2 Instance  
+Launch an EC2 instance from the AWS Console and give it the name **ansible**.  
+This name helps in easy identification later.
 
+🔐 Step 2: Connect Using SSH  
+
+Login to the instance using SSH from your terminal:
+```
+ssh -i Downloads/server1.pem ec2-user@<public-ip>
+```
+This provides secure access to the EC2 server.
+
+🖥️ Step 3: Change Hostname  
+
+After login, change the hostname of the instance. 
+
+```
+ sudo hostnamectl hostname Aansible
+```
+This helps you understand that this server is used for Ansible when working with multiple machines.
+
+🌐 Step 4: Allow Required Ports  
+In the Security Group, allow:
+- Port 22 → SSH access  
+- Port 80 → Web/Application access  
+
+⚠️ Ansible does not require a specific port, but these ports are commonly needed.
+
+🔄 Step 5: Update the System 
+
+Run system update to install all available updates:
+```
+sudo yum update -y  
+```
+
+📦 Step 6: Install Ansible  
+
+Install Ansible using:
+```
+sudo yum install ansible -y  
+```
+
+📁 Step 7: Ansible Directory Structure  
+
+After installation, Ansible creates a folder at:
+```
+ /etc/ansible/  
+```
+Move into this directory:
+```
+cd /etc/ansible/  
+```
+
+🗂️ Step 8: Create Playbooks Folder 
+
+Create a folder to store all Ansible playbooks:
+```
+sudo mkdir playbooks
+cd playbooks  
+```
+✅ Ansible setup is now complete and ready for playbook creation 🎉
 
 
 
