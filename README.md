@@ -15,7 +15,7 @@ Ansible lets you manage multiple servers with a single command.
 
 ---
 
-##🔹 Why do we use Ansible?
+## 🔹 Why do we use Ansible?
 
 - To apply the same configuration on multiple servers
 - To install and update software
