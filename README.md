@@ -13,6 +13,11 @@ Ansible lets you manage multiple servers with a single command.
 - Playbooks are written in **YAML**
 - YAML files are **human-readable**
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Ansible--Setup-and-some-info/blob/main/img/ansi.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+
 ---
 
 ## 🔹 Why do we use Ansible?
@@ -135,6 +140,10 @@ With Ansible:
 Launch an EC2 instance from the AWS Console and give it the name **ansible**.  
 This name helps in easy identification later.
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Ansible--Setup-and-some-info/blob/main/img/Screenshot%202025-12-16%20234829.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
 ---
 
 🔐 Step 2: Connect Using SSH  
@@ -156,6 +165,12 @@ After login, change the hostname of the instance.
 ```
 This helps you understand that this server is used for Ansible when working with multiple machines.
 
+
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Ansible--Setup-and-some-info/blob/main/img/Screenshot%202025-12-16%20181320.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+
 ---
 
 🌐 Step 4: Allow Required Ports  
@@ -174,6 +189,11 @@ Run system update to install all available updates:
 sudo yum update -y  
 ```
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Ansible--Setup-and-some-info/blob/main/img/Screenshot%202025-12-16%20181738.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+
 ---
 
 📦 Step 6: Install Ansible  
@@ -182,6 +202,9 @@ Install Ansible using:
 ```
 sudo yum install ansible -y  
 ```
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Ansible--Setup-and-some-info/blob/main/img/Screenshot%202025-12-16%20182032.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
 
 ---
 
@@ -193,6 +216,11 @@ After installation, Ansible creates a folder at:
 
  cd /etc/ansible/  
 ```
+
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Ansible--Setup-and-some-info/blob/main/img/Screenshot%202025-12-17%20000015.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
 
 ---
 
